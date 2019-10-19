@@ -30,8 +30,26 @@
                     @endif
                         <div class="card text-white bg-primary mb-3"  style="max-width: 20rem;">
                             <div class="card-body" >
+                                <h4 class="card-title" class="center-align">Total de la Nomina</h4>
+                                <h1 class="display-1" class="center-align">{{ $totalNomina }}</h1>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-primary mb-3"  style="max-width: 20rem;">
+                            <div class="card-body" >
                                 <h4 class="card-title" class="center-align">Quorum</h4>
                                 <h1 class="display-1" class="center-align">{{ $quorum }}</h1>
+                            </div>
+                        </div>
+                         <div class="card text-white bg-primary mb-3"  style="max-width: 20rem;">
+                            <div class="card-body" >
+                                <h4 class="card-title" class="center-align">Pesentes</h4>
+                                <h1 class="display-1" class="center-align">{{ $salaPresente }}</h1>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-primary mb-3"  style="max-width: 20rem;">
+                            <div class="card-body" >
+                                <h4 class="card-title" class="center-align">Ausentes</h4>
+                                <h1 class="display-1" class="center-align">{{ $salaAusentes }}</h1>
                             </div>
                         </div>
                     </div>

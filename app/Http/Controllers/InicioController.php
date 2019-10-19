@@ -14,13 +14,12 @@ class InicioController extends Controller
 
     public function index()
     {
-
-        $quorum = NominaModel::where('presente','S')->where('categoria','Beneficiario')->count();
-        $beneficiarosPresentes = NominaModel::where('presente','S')->where('asamblea','N')->where('categoria','Beneficiario')->count();
-        $adultosPesentes = NominaModel::where('presente','S')->where('categoria','!=','Beneficiario')->count();
+        $totalNomina  = NominaModel::all()->count();
+        $quorum = NominaModel::where('presente','S')->count();
+        $salaPresente = NominaModel::where('asamblea','S')->count();
+        $salaAusentes = NominaModel::where('asamblea','N')->count();
         $oradores = OradoresModel::all();
-
-        return view('inicio',compact('quorum','beneficiarosPresentes','adultosPesentes','oradores'));
+        return view('inicio',compact('totalNomina','quorum','salaPresente','salaAusentes','oradores'));
 
     }
 }
