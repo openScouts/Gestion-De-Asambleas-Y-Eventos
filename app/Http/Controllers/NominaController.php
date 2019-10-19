@@ -60,7 +60,6 @@ class NominaController extends Controller
         PDF::SetFillColor(224, 235, 255);
         PDF::SetTextColor(0);
         PDF::SetFont('');
-
         $style = array(
             'position' => '5',
             'align' => 'C',
@@ -72,7 +71,8 @@ class NominaController extends Controller
 
         );
         $h_color = 10;
-
+        
+        PDF::Write(30, "** Tachar la Membresia Ausente, y agragar al final los incorporados fuera de nomina");
         //$contador = 1;
         foreach ($nomina->chunk(20) as $chunk) {
             PDF::Cell(30, 7, 'Pagina :' . PDF::getAliasNumPage());
