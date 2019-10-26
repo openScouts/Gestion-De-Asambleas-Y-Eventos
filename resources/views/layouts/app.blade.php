@@ -28,6 +28,9 @@
                 <li class="nav-item">
                     <a href="{{ url('asamblea') }}" class="nav-link">Asamblea</a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{ url('asamblea/oradores') }}" class="nav-link">Oradores</a>
+                </li>
                 <li class="nav-item dropdown">
                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                         Usuario <span class="caret"></span>

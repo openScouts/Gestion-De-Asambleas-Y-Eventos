@@ -52,7 +52,7 @@
                         <div class="col-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">Oradores: {{ $oradores->count() }}</h5>
+                                    <h5 class="card-title">Asamblea Oradores: {{ $oradores->count() }}</h5>
                                     <ul class="list-group list-group-flush">
                                         @foreach($oradores as $var )
                                             <li class="list-group-item">

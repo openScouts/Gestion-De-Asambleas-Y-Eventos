@@ -6,7 +6,7 @@
 @section('content')
     <a href="{{url('/asamblea/oradores')}}"  class="btn btn-primary">Oradores</a>
     <a href="{{url('/asamblea/listado')}}"  class="btn btn-primary">Listado</a>
-    <a href="{{url('/asamblea/ausente_masivo')}}"  class="btn btn-warning">Ausente Masivo</a>
+    <a href="{{url('/asamblea/ausente_masivo')}}" onclick="return confirm('Esta seguro de pasar a todos ausentes?')"  class="btn btn-warning">Ausente Masivo</a>
     
     <div class="card">
         <div class="card-body">
