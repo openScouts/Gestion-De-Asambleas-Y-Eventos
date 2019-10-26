@@ -30,20 +30,20 @@
                     @endif
 
                          <div class="card text-white bg-primary mb-3" >
-                            <div class="card-body" >
-                                <h4 class="card-title" class="center-align">Quorum</h4>
-                                <h1 class="display-1" class="center-align">{{ $quorum }}</h1>
+                            <div class="card-body  center-align" style="text-align: center;" >
+                                <h4 class="card-title center-align">Quorum</h4>
+                                <h1 class="display-1 center-align"  style="font-size: 8em;">{{ $quorum }}</h1>
                             </div>
                         </div>
                     <ul class="list-group">
                         <li class="list-group-item d-flex justify-content-between align-items-center">Acreditados
-                          <span class="badge badge-success badge-pill"> {{ $acreditados }}</span>
+                          <span class="badge badge-success badge-pill" style="font-size: 2em;"> {{ $acreditados }}</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">Padron Asambleario
-                            <span class="badge badge-primary badge-pill"> {{ $totalPadron }}</span>
+                            <span class="badge badge-primary badge-pill" style="font-size: 2em;"> {{ $totalPadron }}</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">Acreditados Ausentes
-                            <span class="badge badge-warning badge-pill"> {{ $acreditadosAusentes }}</span>
+                            <span class="badge badge-warning badge-pill" style="font-size: 2em;"> {{ $acreditadosAusentes }}</span>
                         </li>
                     </ul>
 
