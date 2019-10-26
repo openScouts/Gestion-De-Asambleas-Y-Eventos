@@ -14,6 +14,11 @@ class AsambleaController extends Controller
         return view('asamblea/index');
     }
 
+    function ausente_masivo(){
+        $nomina = NominaModel::where('presente', 'S')->update(['asamblea' => 'N']);
+        return back();
+    }
+
     function estado(Request $Request)
     {
 

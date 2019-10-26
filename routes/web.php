@@ -40,3 +40,5 @@ Route::get('/asamblea/historico/{id}', 'AsambleaController@historico');
 Route::get('/asamblea/oradores', 'OradoresController@index');
 Route::post('/asamblea/oradores', 'OradoresController@alta');
 Route::get('/asamblea/oradores/baja/{id}', 'OradoresController@baja');
+
+Route::get('/asamblea/ausente_masivo', 'AsambleaController@ausente_masivo');

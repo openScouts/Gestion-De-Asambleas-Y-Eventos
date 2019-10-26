@@ -5,6 +5,7 @@
 @endsection
 
 @section('content')
+    <a href="{{url('nomina')}}"  class="btn btn-primary">Nomina</a>
     <div class="card">
         <div class="card-body">
             <form method="POST">

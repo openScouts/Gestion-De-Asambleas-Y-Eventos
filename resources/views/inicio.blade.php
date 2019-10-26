@@ -11,7 +11,7 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-sm navbar-dark blue">
-            <a class="navbar-brand" href="#">HAL</a>
+            <a class="navbar-brand" href="#">OpenScouts</a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
                      <li class="nav-item">
@@ -30,26 +30,26 @@
                     @endif
                         <div class="card text-white bg-primary mb-3"  style="max-width: 20rem;">
                             <div class="card-body" >
-                                <h4 class="card-title" class="center-align">Total de la Nomina</h4>
-                                <h1 class="display-1" class="center-align">{{ $totalNomina }}</h1>
+                                <h4 class="card-title" class="center-align">Padron Asambleario</h4>
+                                <h1 class="display-1" class="center-align">{{ $totalPadron }}</h1>
                             </div>
                         </div>
                         <div class="card text-white bg-primary mb-3"  style="max-width: 20rem;">
+                            <div class="card-body" >
+                                <h4 class="card-title" class="center-align">Acreditados</h4>
+                                <h1 class="display-1" class="center-align">{{ $acreditados }}</h1>
+                            </div>
+                        </div>
+                         <div class="card text-white bg-primary mb-3"  style="max-width: 20rem;">
                             <div class="card-body" >
                                 <h4 class="card-title" class="center-align">Quorum</h4>
                                 <h1 class="display-1" class="center-align">{{ $quorum }}</h1>
                             </div>
                         </div>
-                         <div class="card text-white bg-primary mb-3"  style="max-width: 20rem;">
-                            <div class="card-body" >
-                                <h4 class="card-title" class="center-align">Pesentes</h4>
-                                <h1 class="display-1" class="center-align">{{ $salaPresente }}</h1>
-                            </div>
-                        </div>
                         <div class="card text-white bg-primary mb-3"  style="max-width: 20rem;">
                             <div class="card-body" >
-                                <h4 class="card-title" class="center-align">Ausentes</h4>
-                                <h1 class="display-1" class="center-align">{{ $salaAusentes }}</h1>
+                                <h4 class="card-title" class="center-align">Acreditados Ausentes</h4>
+                                <h1 class="display-1" class="center-align">{{ $acreditadosAusentes }}</h1>
                             </div>
                         </div>
                     </div>

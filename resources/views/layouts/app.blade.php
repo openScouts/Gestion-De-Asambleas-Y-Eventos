@@ -15,7 +15,7 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
       <div class="container-fluid">
         <a class="navbar-brand waves-effect">
-          <strong class="blue-text">Caseroft</strong>
+          <strong class="blue-text">OpenScouts</strong>
         </a>
           <ul class="navbar-nav mr-auto">
             @auth
@@ -23,20 +23,14 @@
                     <a href="{{ url('/') }}" class="nav-link">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ url('nomina') }}" class="nav-link">Nomina</a>
-                </li>
-                <li class="nav-item">
-                    <a href="{{ url('acreditaciones') }}" class="nav-link">Acreditaciones</a>
+                    <a href="{{ url('nomina') }}" class="nav-link">Acreditaciones</a>
                 </li>
                 <li class="nav-item">
                     <a href="{{ url('asamblea') }}" class="nav-link">Asamblea</a>
                 </li>
-                <li class="nav-item">
-                    <a href="{{ url('configuracion') }}" class="nav-link">Configuracion</a>
-                </li>
                 <li class="nav-item dropdown">
                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                        {{ Auth::user()->name }} <span class="caret"></span>
+                        Usuario <span class="caret"></span>
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
