@@ -8,7 +8,6 @@
         <a href="{{url('acreditaciones')}}"  class="btn btn-success">Acreditaciones</a>
         <a href="{{url('nomina/organismos')}}"  class="btn btn-primary">Organismos</a>
         <a href="{{url('nomina')}}"  class="btn btn-warning">Borrar Filtro</a>
-
         <div class="card">
             <div class="card-body">
                 <div class="card-title">Nomina</div>

@@ -7,7 +7,7 @@
         <title>Gestion De Acreditaciones Scouts</title>
         <link type="text/css" rel="stylesheet" href="{{ url('css/mdb.css') }}"  media="screen,projection"/>
         <link type="text/css" rel="stylesheet" href="{{ url('css/bootstrap.css') }}"  media="screen,projection"/>
-
+        <meta http-equiv="refresh" content="20" >
     </head>
     <body>
         <nav class="navbar navbar-expand-sm navbar-dark blue">
@@ -28,30 +28,25 @@
                     @else
                         <div class="col-12">
                     @endif
-                        <div class="card text-white bg-primary mb-3"  style="max-width: 20rem;">
-                            <div class="card-body" >
-                                <h4 class="card-title" class="center-align">Padron Asambleario</h4>
-                                <h1 class="display-1" class="center-align">{{ $totalPadron }}</h1>
-                            </div>
-                        </div>
-                        <div class="card text-white bg-primary mb-3"  style="max-width: 20rem;">
-                            <div class="card-body" >
-                                <h4 class="card-title" class="center-align">Acreditados</h4>
-                                <h1 class="display-1" class="center-align">{{ $acreditados }}</h1>
-                            </div>
-                        </div>
-                         <div class="card text-white bg-primary mb-3"  style="max-width: 20rem;">
+
+                         <div class="card text-white bg-primary mb-3" >
                             <div class="card-body" >
                                 <h4 class="card-title" class="center-align">Quorum</h4>
                                 <h1 class="display-1" class="center-align">{{ $quorum }}</h1>
                             </div>
                         </div>
-                        <div class="card text-white bg-primary mb-3"  style="max-width: 20rem;">
-                            <div class="card-body" >
-                                <h4 class="card-title" class="center-align">Acreditados Ausentes</h4>
-                                <h1 class="display-1" class="center-align">{{ $acreditadosAusentes }}</h1>
-                            </div>
-                        </div>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Acreditados
+                          <span class="badge badge-success badge-pill"> {{ $acreditados }}</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Padron Asambleario
+                            <span class="badge badge-primary badge-pill"> {{ $totalPadron }}</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Acreditados Ausentes
+                            <span class="badge badge-warning badge-pill"> {{ $acreditadosAusentes }}</span>
+                        </li>
+                    </ul>
+
                     </div>
                     @if($oradores->count())
                         <div class="col-6">
